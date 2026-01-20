@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <h3>Add New Note here!</h3>
+    
+    <form method='POST' action="{{ url_for('add_notes', token=token) }}">
+        <label>Title:</label>
+        <input type="text" name="title" class="formdata">
+        <label>Add Content:</label>
+        <textarea name="content" class="formdata">Content</textarea>
+        <br>
+        <button type="submit">Save</button>
+    </form>
+
+
+{% endblock %}

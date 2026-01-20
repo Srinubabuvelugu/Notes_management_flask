@@ -1,0 +1,4 @@
+flask
+mysql-connector-python
+secure-smtplib
+itsdangerous
